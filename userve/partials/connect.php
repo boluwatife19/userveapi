@@ -1,9 +1,9 @@
 <?php
 
-$db_host = 'localhost'; // Use the correct hostname
-$db_name = 'userve_api'; // Use your database name
-$user_name = 'userve_api'; // Use your MySQL user name
-$user_password = 'Boluwatife19'; // Use your MySQL password
+$db_host = ''; // Use the correct hostname
+$db_name = ''; // Use your database name
+$user_name = ''; // Use your MySQL user name
+$user_password = ''; // Use your MySQL password
 
 
 $options = [
