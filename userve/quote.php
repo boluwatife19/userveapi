@@ -27,26 +27,18 @@ if (isset($_POST["send"])) {
     // Sanitize and validate input values
     $mail = new PHPMailer(true);
 
-    // $mail->isSMTP();
-    // $mail->Host = 'smtp.gmail.com';
-    // $mail->SMTPAuth = true;
-    // $mail->Username = 'userve12@gmail.com'; // Your Gmail username
-    // $mail->Password = 'othtjhjutrghjjqq'; // Your Gmail password
-    // $mail->SMTPSecure = 'ssl';
-    // $mail->Port = 465;
-
     
     $mail->isSMTP();
     $mail->Host = 'mailout.one.com ';
     $mail->SMTPAuth = true;
-    $mail->Username = 'quote@uservewireless.net'; // Your one.com username
-    $mail->Password = 'Boluwatife19'; // Your one.com password
+    $mail->Username = 'your@domain.net'; // Your one.com username
+    $mail->Password = 'password'; // Your one.com password
     $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->Port = port number;
 
     $mail->setFrom($_POST["email"]); // Set the sender's email address
     $mail->addAddress($_POST["email"]); // Add the recipient's email address
-    $mail->addAddress('userve12@gmail.com'); // Add the recipient's email addzress
+    $mail->addAddress('Email'); // Add the recipient's email addzress
     $mail->isHTML(true);
     $mail->Subject = "New Qoutation Request"; // Set the email subject (overwrite the previous subject)
     $mail->Body = '<html lang="en">
